@@ -57,10 +57,6 @@ if [[ "$OSTYPE" == darwin* ]]; then
   # Sniff network info.
   alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 
-  # Developer tools shortcuts.
-  alias tower='gittower'
-  alias t='gittower'
-
   # Process grep should output full paths to binaries.
   alias pgrep='pgrep -fli'
 else
