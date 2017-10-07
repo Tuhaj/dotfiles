@@ -1,4 +1,7 @@
 #!/usr/bin/env zsh
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export GOPATH=/usr/local/Cellar/go/1.9
+export PATH=$PATH:$GOPATH/bin
 
 curr="$pm/dotfiles"
 
@@ -20,6 +23,9 @@ prompt 'paulmillr'
 # ==================================================================
 # = Aliases =
 # ==================================================================
+alias zshrc="subl ~/.zshrc"
+alias tuhaj="open 'https://github.com/Tuhaj'"
+alias yrlint="yarn run test:lint:js"
 
 alias -g f2='| head -n 2'
 alias -g f10='| head -n 10'
