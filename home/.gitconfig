@@ -35,7 +35,7 @@
   ui = true
 
 [core]
-  editor = subl
+  editor = subl -w
   excludesfile = ~/.gitignore
   #pager = diff-highlight | less -r
 
