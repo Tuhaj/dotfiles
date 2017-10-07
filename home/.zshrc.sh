@@ -23,9 +23,18 @@ prompt 'paulmillr'
 # ==================================================================
 # = Aliases =
 # ==================================================================
-alias zshrc="subl ~/.zshrc"
+alias zshrc="subl $HOME/.zshrc"
 alias tuhaj="open 'https://github.com/Tuhaj'"
 alias yrlint="yarn run test:lint:js"
+alias lh="ls -A | egrep '^\.'"
+alias gdrive="cd $HOME/gdrive"
+alias published="cd $HOME/gdrive/published"
+function publish() {
+  zsh $HOME/Developer/personal/dotfiles/scripts/publish.sh "$1"
+}
+function nf() {
+  zsh $HOME/Developer/personal/dotfiles/scripts/notify.sh "$1"
+}
 
 alias -g f2='| head -n 2'
 alias -g f10='| head -n 10'
